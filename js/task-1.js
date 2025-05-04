@@ -1,12 +1,44 @@
-function slugify(title) {
-    let titleToLowerCase = title.toLowerCase();
-    let arrTitle = titleToLowerCase.split(" ");
-    let slugText = arrTitle.join("-");
-    return slugText;
+const getUserNames = (users) => {
+    const namesArray = users.map(user => user.name);
+    return namesArray;
 }
 
-
-console.log(slugify("Arrays for beginners")); // "arrays-for-beginners"
-console.log(slugify("English for developer")); // "english-for-developer"
-console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
-console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+console.log(
+  getUserNames([
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    balance: 2811
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    balance: 3821
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    balance: 3793
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    balance: 2278
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    balance: 3951
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    balance: 1498
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    balance: 2764
+  },
+])
+);
